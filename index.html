@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenidos a mi Landing Page!</h1>
+    <p>Estoy aprendiendo con Código Futura. 🎉</p>
+    <button onclick="cambiarMensaje()">¡Hacé clic aquí!</button>
+    <p id="mensaje"></p>
+
+    <script>
+        function cambiarMensaje() {
+            document.getElementById("mensaje").innerHTML = "¡Gracias por cliquear! 🚀";
+        }
+    </script>
+</body>
+</html>
